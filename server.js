@@ -21,12 +21,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Register API Routes
-app.use('/api/auth', require('./server/routes/auth'));
-app.use('/api/products', require('./server/routes/products'));
-app.use('/api/categories', require('./server/routes/categories'));
-app.use('/api/orders', require('./server/routes/orders'));
-app.use('/api/delivery', require('./server/routes/delivery'));
-app.use('/api/stats', require('./server/routes/stats'));
+app.use('/api/auth', require('./auth'));
+app.use('/api/products', require('./products'));
+app.use('/api/categories', require('./categories'));
+app.use('/api/orders', require('./orders'));
+app.use('/api/delivery', require('./delivery'));
+app.use('/api/stats', require('./stats'));
 
 // Serve Admin Panel at /admin Route
 app.use('/admin', express.static(path.join(__dirname, 'admin')));
