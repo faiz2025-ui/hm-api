@@ -4,7 +4,7 @@
 
 const express = require('express');
 const router = express.Router();
-const db = require('../config/db');
+const db = require('./db');
 
 // GET /api/categories
 router.get('/', async (req, res) => {
