@@ -7,10 +7,10 @@ const path = require('path');
 const fs = require('fs');
 
 // Environment variables or defaults
-const DB_HOST = process.env.DB_HOST;
-const DB_USER = process.env.DB_USER;
-const DB_PASSWORD = process.env.DB_PASSWORD;
-const DB_NAME = process.env.DB_NAME;
+const DB_HOST = process.env.DB_HOST || 'mysql-1612bfaf-faizhamad35-8ef3.l.aivencloud.com';
+const DB_USER = process.env.DB_USER || 'avnadmin';
+const DB_PASSWORD = process.env.DB_PASSWORD ||'AVNS_wli8PPhCaN-FxUxZ9co';
+const DB_NAME = process.env.DB_NAME || 'defaultdb';
 const DB_PORT = process.env.DB_PORT || 19192;
 
 let pool = null;
